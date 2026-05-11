@@ -106,9 +106,9 @@ const computerScorePara = document.querySelector("#computer-score")
 
 const genComputerChoice = () => {
     const options = ["rock", "paper", "scissors"];
-    // 1. Assign the random number to a variable
+    
     const randIdx = Math.floor(Math.random() * 3);
-    // 2. Use square brackets [] to access array items
+    
     return options[randIdx];
 };
 
@@ -131,11 +131,11 @@ const showWinner = (userWin, userChoice, computerChoice) => {
     }
 }
 
-// 3. Added 'userChoice' as a parameter here
+
 const playGame = (userChoice) => {
     console.log("user choice:", userChoice);
     
-    // 4. Generate computer choice
+    
     const computerChoice = genComputerChoice();
     console.log("computer choice:", computerChoice);
 
@@ -154,7 +154,7 @@ const playGame = (userChoice) => {
         showWinner(userWin, userChoice, computerChoice);
     }
 
-    // TODO: Add your win/loss logic here!
+
 };
 
 choices.forEach((choice) => {
